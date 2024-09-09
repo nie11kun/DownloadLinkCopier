@@ -1,46 +1,46 @@
-# 下载链接复制器
+# Download Link Copier
 
-下载链接复制器是一个 Chrome 扩展程序，允许用户轻松查看和复制最近下载的文件链接。
+Download Link Copier is a Chrome extension that allows users to easily view and copy download links from their recent downloads.
 
-## 功能特点
+## Features
 
-- 查看最近下载列表
-- 一键复制下载链接
-- 清晰直观的用户界面
-- 支持浅色和深色主题
+- View a list of recent downloads
+- Copy download links with a single click
+- Clean and intuitive user interface
+- Supports both light and dark themes
 
-## 安装说明
+## Installation
 
-要安装下载链接复制器扩展程序：
+To install the Download Link Copier extension:
 
-1. 克隆此仓库或下载 ZIP 文件并解压。
-2. 打开 Google Chrome 浏览器，导航至 `chrome://extensions`。
-3. 通过切换右上角的开关启用"开发者模式"。
-4. 点击"加载已解压的扩展程序"，选择包含扩展程序文件的目录。
+1. Clone this repository or download the ZIP file and extract it.
+2. Open Google Chrome and navigate to `chrome://extensions`.
+3. Enable "Developer mode" by toggling the switch in the top right corner.
+4. Click "Load unpacked" and select the directory containing the extension files.
 
-## 使用方法
+## Usage
 
-1. 点击 Chrome 工具栏中的下载链接复制器图标以打开弹出窗口。
-2. 您将看到最近下载的文件列表。
-3. 点击任何下载项旁边的"复制链接"按钮，即可将其 URL 复制到剪贴板。
-4. 状态消息将确认链接已成功复制。
+1. Click on the Download Link Copier icon in your Chrome toolbar to open the popup.
+2. You will see a list of your recent downloads.
+3. Click the "Copy Link" button next to any download to copy its URL to your clipboard.
+4. A status message will confirm when the link has been copied successfully.
 
-## 开发
+## Development
 
-要修改或增强此扩展程序：
+To modify or enhance this extension:
 
-1. 对相关文件（`popup.html`、`popup.js` 等）进行更改。
-2. 如果修改了 manifest 或添加了新资源，请确保更新 `manifest.json`。
-3. 通过点击扩展程序卡片上的刷新图标，在 `chrome://extensions` 中重新加载扩展程序。
+1. Make changes to the relevant files (`popup.html`, `popup.js`, etc.).
+2. If you modify the manifest or add new resources, make sure to update `manifest.json`.
+3. Reload the extension in `chrome://extensions` by clicking the refresh icon on the extension card.
 
-## 贡献
+## Contributing
 
-欢迎贡献！请随时提交 Pull Request。
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 许可证
+## License
 
-本项目采用开源方式，遵循 [MIT 许可证](LICENSE)。
+This project is open source and available under the [MIT License](LICENSE).
 
-## 联系方式
+## Contact
 
-如果您有任何问题或反馈，请在本仓库中开启一个 issue。
+If you have any questions or feedback, please open an issue in this repository.
