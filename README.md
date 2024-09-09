@@ -1,3 +1,5 @@
+[中文说明文档](https://github.com/nie11kun/DownloadLinkCopier/blob/main/README_CN.md)
+
 # Download Link Copier
 
 Download Link Copier is a Chrome extension that allows users to easily view and copy download links from their recent downloads.
