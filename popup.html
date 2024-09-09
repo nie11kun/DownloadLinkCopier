@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Link Copier</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+            --button-bg: #4CAF50;
+            --button-text: #ffffff;
+            --button-hover: #45a049;
+            --status-color: #666666;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #2c2c2c;
+                --text-color: #e0e0e0;
+                --border-color: #555555;
+                --button-bg: #5CFF60;
+                --button-text: #000000;
+                --button-hover: #4CD950;
+                --status-color: #b0b0b0;
+            }
+        }
+
+        body {
+            width: 400px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            transition: all 0.3s ease;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header img {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        #downloadList {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .download-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(128, 128, 128, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .download-item:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+
+        .file-name {
+            flex: 0 1 70%; /* 这里限制文件名占70%的宽度 */
+            margin-right: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+        }
+
+        .copy-button {
+            flex: 0 0 auto; /* 按钮不缩放 */
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            border: none;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background-color: var(--button-hover);
+        }
+
+        #status {
+            color: var(--status-color);
+            font-style: italic;
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/icon32.png" alt="Download Link Copier Icon">
+        <h1>Download Link Copier</h1>
+    </div>
+    <div id="downloadList"></div>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
